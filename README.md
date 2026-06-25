@@ -1,71 +1,148 @@
-PCOS Prediction and Subtype Analysis using Machine Learning
-Overview
+# PCOS Prediction and Subtype Analysis using Machine Learning
 
-This project applies supervised and unsupervised machine learning techniques to analyze Polycystic Ovary Syndrome (PCOS) data.
+## Overview
 
-The objective is to:
+This project applies both supervised and unsupervised machine learning techniques to analyze Polycystic Ovary Syndrome (PCOS) data.
 
-Predict PCOS occurrence using classification models.
-Discover hidden patient subtypes using clustering techniques.
-Evaluate model performance using multiple statistical metrics.
+The primary objectives of this project are:
 
+- Predict PCOS occurrence using classification models.
+- Discover hidden patient subtypes using clustering techniques.
+- Evaluate model performance using multiple statistical metrics.
+- Compare the effectiveness of different machine learning approaches.
 
-PCOS Dataset:
+---
 
-The dataset contains clinical, hormonal, and physiological measurements relevant to PCOS diagnosis.
+## Dataset
 
-Data Preprocessing
-Missing value imputation,
-Numeric feature conversion,
-Standardization using StandardScaler,
-PCA-based dimensionality reduction.
+The project uses a PCOS dataset containing clinical, physiological, and diagnostic parameters related to Polycystic Ovary Syndrome.
 
-Supervised Learning Models:
+The dataset was preprocessed before model development to ensure data quality and model reliability.
 
-Logistic Regression,
-Random Forest,
-Decision Tree,
-Support Vector Machine (SVM),
-K-Nearest Neighbors (KNN),
-Hyperparameter Optimization.
+---
 
-Random Forest optimization performed using GridSearchCV.
+## Data Preprocessing
 
-Parameters tuned:
+The following preprocessing steps were performed:
 
-Number of trees,
-Tree depth,
-Minimum samples split,
-Minimum samples leaf,
-Unsupervised Learning Models,
-Gaussian Mixture Model (GMM),
-Spectral Clustering,
-Hierarchical Clustering,
-Evaluation Metrics,
-Classification,
-Accuracy,
-F1 Score.
+- Handling missing values
+- Feature selection and cleaning
+- Standardization using StandardScaler
+- Dimensionality reduction using PCA
+- Train-Test splitting for supervised learning
 
-Classification Report:
+---
 
-Confusion MatriX,
-Clustering,
-Silhouette Score,
-Davies-Bouldin Index,
-Clinical Coherence Score.
+## Supervised Learning Models
 
-Technologies Used:
+The following classification models were implemented and evaluated:
 
-Python,
-Pandas,
-NumPy,
-Scikit-Learn,
-Matplotlib,
-Seaborn.
+### Logistic Regression
+A baseline linear classification model used for PCOS prediction.
 
-Key Outcomes:
+### Decision Tree
+A tree-based model capable of capturing nonlinear decision boundaries.
 
-Developed multiple machine learning models for PCOS prediction.
-Performed clustering-based subtype identification.
-Compared supervised and unsupervised learning approaches.
-Applied optimization techniques to improve model performance.
+### Random Forest
+An ensemble learning technique that improves predictive performance by combining multiple decision trees.
+
+### Support Vector Machine (SVM)
+A powerful classifier used to separate PCOS and non-PCOS cases.
+
+### K-Nearest Neighbors (KNN)
+A distance-based classification algorithm used for comparative analysis.
+
+---
+
+## Hyperparameter Optimization
+
+Random Forest performance was improved using GridSearchCV.
+
+The following parameters were tuned:
+
+- Number of estimators
+- Maximum tree depth
+- Minimum samples split
+- Minimum samples leaf
+
+---
+
+## Unsupervised Learning Models
+
+To identify hidden patterns and possible PCOS subtypes, the following clustering techniques were applied:
+
+### Gaussian Mixture Model (GMM)
+
+Used to identify probabilistic clusters and patient subgroup distributions.
+
+### Spectral Clustering
+
+Applied for discovering complex cluster structures in the dataset.
+
+### Hierarchical Clustering
+
+Used to visualize cluster relationships and patient grouping patterns.
+
+---
+
+## Evaluation Metrics
+
+### Classification Metrics
+
+- Accuracy Score
+- F1 Score
+- Precision
+- Recall
+- Confusion Matrix
+- Classification Report
+
+### Clustering Metrics
+
+- Silhouette Score
+- Davies-Bouldin Index
+- Clinical Coherence Analysis
+
+---
+
+## Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Scikit-Learn
+- Matplotlib
+- Seaborn
+
+---
+
+## Key Outcomes
+
+- Developed multiple machine learning models for PCOS prediction.
+- Performed clustering-based patient subtype discovery.
+- Applied dimensionality reduction using PCA.
+- Optimized model performance through hyperparameter tuning.
+- Compared supervised and unsupervised learning approaches.
+- Evaluated models using both classification and clustering metrics.
+
+---
+
+## Future Improvements
+
+Potential future enhancements include:
+
+- Deep Learning based PCOS prediction models
+- Explainable AI (XAI) techniques for model interpretation
+- Feature importance analysis using SHAP values
+- Deployment as a web-based diagnostic support tool
+
+---
+
+## Author
+
+**Ishaan Selvakumar**
+
+B.Tech Artificial Intelligence & Data Science
+
+Amrita Vishwa Vidyapeetham
+
+Machine Learning | Deep Learning | Computer Vision
