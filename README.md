@@ -10,7 +10,7 @@ Discover hidden patient subtypes using clustering techniques.
 Evaluate model performance using multiple statistical metrics.
 
 
-PCOS Dataset
+PCOS Dataset:
 
 The dataset contains clinical, hormonal, and physiological measurements relevant to PCOS diagnosis.
 
@@ -20,7 +20,8 @@ Numeric feature conversion,
 Standardization using StandardScaler,
 PCA-based dimensionality reduction.
 
-Supervised Learning Models
+Supervised Learning Models:
+
 Logistic Regression,
 Random Forest,
 Decision Tree,
@@ -45,14 +46,16 @@ Classification,
 Accuracy,
 F1 Score.
 
-Classification Report
+Classification Report:
+
 Confusion MatriX,
 Clustering,
 Silhouette Score,
 Davies-Bouldin Index,
 Clinical Coherence Score.
 
-Technologies Used
+Technologies Used:
+
 Python,
 Pandas,
 NumPy,
@@ -60,7 +63,8 @@ Scikit-Learn,
 Matplotlib,
 Seaborn.
 
-Key Outcomes
+Key Outcomes:
+
 Developed multiple machine learning models for PCOS prediction.
 Performed clustering-based subtype identification.
 Compared supervised and unsupervised learning approaches.
